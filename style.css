@@ -1,35 +1,190 @@
-body{
-  height: 100vh;
- background-color: #100c1a;
- display: flex;
- justify-content: center;
- align-items: center;
- font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.animation{
- width: 300px;
- height: 300px;
- border: 300px;
- border-radius: 50%;
- background-color: #100c1a;
- color:white;
- display:flex;
- justify-content: center;
- align-items: center;
- animation: square 5s ease-in 0.2s infinite;
+body {
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
 }
 
-@keyframes square{
-  0%{
-  box-shadow: 0px 1px 10px 0px rgba(72, 25, 105, 0.7);
-  }
-  50%{
-box-shadow: 0px 1px 60px 0px rgba(72, 25, 105, 0.7);
-  }
-  80%{
-    box-shadow: 0px 1px 10px 0px rgba(72, 25, 105, 0.7);
-  }
-100%{
-box-shadow: 0px 1px 10px 0px rgba(72, 25, 105, 0.7);
-  }
+header {
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px;
+  list-style-type: none;
+}
+
+header .nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .nav li a #link {
+  text-decoration: none;
+}
+
+section {
+  padding: 3%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section .left_con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section .right_con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section .right_con .box-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: column;
+  gap: 60px;
+}
+
+section .right_con .box-1 h1 {
+  margin: 0;
+  font-weight: 200;
+}
+
+section .right_con .box-1 #title {
+  color: grey;
+}
+
+section .right_con .box-1 .box-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+section .right_con .box-1 .box-3 {
+  width: 300px;
+}
+
+section .right_con .box-1 .qipper {
+  font-size: 100pt;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+section .right_con .box-1 .box-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .right_con .box-1 .box-4 .best {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.best{
+  display:flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.best h3{
+  font-weight: 200;
+}
+
+footer{
+  background-color: rgb(241, 241, 241);
+  padding:4%;
+  display:flex;
+  
+}
+.text{
+  width:500px;
+  display:column;
+  gap: 100px;
+  flex: 1;
+}
+.text h1{
+  font-size:70pt;
+  font-weight: 900;
+  color:grey;
+  margin: 0;
+}
+.text h2{
+  color:grey;
+  font-weight: 300;
+  font-size: 30pt;
+  margin: 0;
+}
+
+.img{
+  display: flex;
+  flex:1;
+}
+.img img{
+  width:100%;
+  border-radius: 15px;
+}
+.text div p{
+   color:grey;
+   font-size: 17pt;
+}
+.butset{
+  display:flex;
+  flex-direction: column;
+}
+.row{
+   padding:30px;
+  display: flex;
+  flex-direction:column;
